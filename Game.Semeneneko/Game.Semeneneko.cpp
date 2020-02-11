@@ -50,21 +50,6 @@ void DrawMap(char skin, string map_name, move_var ch_move); // функция о
 //принимает на вход: skin -  символ отображения персонажа, map_name - название файла карты ("С:\...\location.txt"), ch_move - направление 
 //движения персонажа из перечисления move_var (STOP, UP, LEFT, RIGHT, DOWN)
 void Input();
-{
-	if (_kbhit() == true)
-		
-		{
-			switch (_getch())
-			case 'a' ch_move = left;
-				break;
-			case 'd' ch_move = right;
-				break;
-			case 's' ch_move = down;
-				break;
-			case 'w' ch_move = up;
-				break;
-		}
-}
 
 void Logic(); // логика игры
 
@@ -169,7 +154,7 @@ void DrawMap(char skin, string map_name, move_var ch_move)
 			//находим координаты нашего персонажа (на старт игры - 2 строка, 2 элемент этой строки)
 			if ((i == character.ch_x) && (j == character.ch_y))
 			{
-
+				current_draw_map[i][j] =character.ch_skin;
 			}
 		}
 		//отрисовывем в консоль текущую строку вектора
@@ -184,11 +169,39 @@ void DrawMap(char skin, string map_name, move_var ch_move)
 
 void Input()
 {
+	if (_kbhit() == true)
 
+	{
+		switch (_getch())
+		{
+		case 'a': character.ch_move = LEFT;
+			--character.ch_y;
+			break;
+		case 'd': character.ch_move = RIGHT;
+			--character.ch_y;
+			break;
+		case 's': character.ch_move = DOWN;
+			--character.ch_x;
+			break;
+		case 'w': character.ch_move = UP;
+			--character.ch_x;
+			break;
+		}
+	}
 }
 
 
 void Logic()
 {
-
+	switch (character.ch_move)
+	{
+	case LEFT: --character.ch_y; DrawMap(character.ch_skin, current_map_name, character.ch_move);
+		break;
+	case RIGHT: --character.ch_y; DrawMap(character.ch_skin, current_map_name, character.ch_move);
+		break;
+	case UP: --character.ch_x; DrawMap(character.ch_skin, current_map_name, character.ch_move);
+		break;
+	case DOWN: --character.ch_x; DrawMap(character.ch_skin, current_map_name, character.ch_move);
+		break;
+	}
 }

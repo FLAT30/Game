@@ -1,2 +1,3 @@
 ﻿  Game.Semeneneko.cpp
-C:\Users\traek_0yz0ldm\Desktop\SemenenkoGame\Game-master\Game.Semeneneko\Game.Semeneneko.cpp(53,1): error C2447:  {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\traek_0yz0ldm\source\repos\Game.Semeneneko\Game.Semeneneko\Game.Semeneneko.cpp(172,22): warning C4805:  ==: небезопасное смешение типа "int" и типа "bool" в операции
+  Game.Semeneneko.vcxproj -> C:\Users\traek_0yz0ldm\source\repos\Game.Semeneneko\Debug\Game.Semeneneko.exe
