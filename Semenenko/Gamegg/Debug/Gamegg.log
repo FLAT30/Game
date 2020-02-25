@@ -1,0 +1,3 @@
+﻿  Gamegg.cpp
+C:\Users\traek_p8st9ze\Desktop\Semenenko\Gamegg\Gamegg.cpp(172,22): warning C4805:  ==: небезопасное смешение типа "int" и типа "bool" в операции
+  Gamegg.vcxproj -> C:\Users\traek_p8st9ze\Desktop\Semenenko\Gamegg\Debug\Gamegg.exe
