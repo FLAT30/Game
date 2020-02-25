@@ -1,0 +1,5 @@
+﻿  Gamegg.cpp
+C:\Users\traek_p8st9ze\Desktop\Semenenko\Gamegg\Gamegg.cpp(98,113): warning C4305:  =: усечение из "int" в "char"
+C:\Users\traek_p8st9ze\Desktop\Semenenko\Gamegg\Gamegg.cpp(98,109): warning C4309:  =: усечение константного значения
+C:\Users\traek_p8st9ze\Desktop\Semenenko\Gamegg\Gamegg.cpp(172,22): warning C4805:  ==: небезопасное смешение типа "int" и типа "bool" в операции
+  Gamegg.vcxproj -> C:\Users\traek_p8st9ze\Desktop\Semenenko\Gamegg\Debug\Gamegg.exe
